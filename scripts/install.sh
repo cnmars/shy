@@ -361,10 +361,10 @@ acme(){
   echo -e "${green}申请成功,证书文件在/root/.acme.sh/${domain}文件夹下${plain}"
   echo -e "${green}正在将证书复制到/usr/local/${appName}/${plain}"
 
-  cp /root/.acme.sh/${domain}*/${domain}.cer /usr/local/${appName}/${domain}.cer
+  cp /root/.acme.sh/${domain}*/fullchain.cer /usr/local/${appName}/${domain}.cer
   cp /root/.acme.sh/${domain}*/${domain}.key /usr/local/${appName}/${domain}.key
 
-  echo -e "${green}操作完成，请修改配置文件并重启${plain}"
+  echo -e "${green}操作完成，请修改配置文件中的证书路径!!!!并重启${plain}"
   echo -n -e "${yellow}按回车返回主菜单: ${plain}" && read temp
   main
 
