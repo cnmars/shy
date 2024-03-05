@@ -4,12 +4,12 @@ go 1.21
 
 require (
 	github.com/apernet/go-tproxy v0.0.0-20230809025308-8f4723fd742f
-	github.com/ppoonk/shy/core v0.0.0-00010101000000-000000000000
-	github.com/ppoonk/shy/extras v0.0.0-00010101000000-000000000000
 	github.com/caddyserver/certmagic v0.17.2
 	github.com/go-resty/resty/v2 v2.10.0
 	github.com/mdp/qrterminal/v3 v3.1.1
 	github.com/mholt/acmez v1.0.4
+	github.com/ppoonk/shy/core v0.0.0-00010101000000-000000000000
+	github.com/ppoonk/shy/extras v0.0.0-00010101000000-000000000000
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/spf13/cobra v1.7.0

@@ -22,10 +22,10 @@ import (
 )
 
 const (
-	getNodeInfo         = "/api/airgo/node/getNodeInfo"
-	getUserlist         = "/api/airgo/user/getUserlist"
-	reportUserTraffic   = "/api/airgo/user/reportUserTraffic"
-	reportNodeStatus    = "/api/airgo/node/reportNodeStatus"
+	getNodeInfo         = "/api/public/airgo/node/getNodeInfo"
+	getUserlist         = "/api/public/airgo/user/getUserlist"
+	reportUserTraffic   = "/api/public/airgo/user/reportUserTraffic"
+	reportNodeStatus    = "/api/public/airgo/node/reportNodeStatus"
 	HyTrafficStats      = "http://127.0.0.1:7654/traffic"         //默认流量统计 API
 	HyTrafficStatsClear = "http://127.0.0.1:7654/traffic?clear=1" //默认流量统计 API
 )
@@ -84,7 +84,7 @@ func (a *ApiClient) GetNodeInfo() (*api.NodeInfo, error) {
 	return &api.NodeInfo{
 		NodeID:     a.Panel.NodeID,
 		Port:       nodeInfo.Port,
-		SpeedLimit: nodeInfo.NodeSpeedlimit,
+		SpeedLimit: nodeInfo.NodeSpeedLimit,
 		Host:       nodeInfo.Host,
 	}, nil
 

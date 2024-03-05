@@ -1,9 +1,9 @@
 panel:
   panelType: AirGo
   apiHost: http://127.0.0.1:8899
-  nodeID: 4
+  nodeID: 2
   key: airgo
-  duration: 60
+  duration: 30
 tls:
   cert: t1.crt
   key: t1.key

@@ -4,9 +4,9 @@ import "github.com/ppoonk/shy/app/api"
 
 type NodeInfoResponse struct {
 	ID             uint32 `json:"id"`
-	NodeSpeedlimit uint64 `json:"node_speedlimit"`
+	NodeSpeedLimit uint64 `json:"node_speed_limit"`
 	TrafficRate    uint32 `json:"traffic_rate"`
-	NodeType       string `json:"node_type"`
+	Protocol       string `json:"protocol"`
 	Remarks        string `json:"remarks"`
 	Address        string `json:"address"`
 	Port           uint32 `json:"port"`
